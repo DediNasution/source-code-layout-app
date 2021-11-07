@@ -1,0 +1,124 @@
+#Source Code Layout
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kuning"
+    tools:context=".MainActivity">
+
+    <!--  header  -->
+    <LinearLayout
+        android:id="@+id/llheader"
+        android:background="@drawable/header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/txlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginTop="130dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="30dp"
+            android:text="Email atau Nomor Telepon"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/inp_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEmail"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/button_style_1"
+            app:backgroundTint="@drawable/button_style_1" />
+
+
+        <TextView
+            android:id="@+id/txpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inp_email"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/inp_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txpass"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/button_style_1"
+            app:backgroundTint="@drawable/button_style_1" />
+
+
+        <Button
+            android:id="@+id/inp_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:layout_below="@+id/inp_pass"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button_style_1"
+            app:backgroundTint="@drawable/button_style_1" />
+
+
+        <TextView
+            android:id="@+id/txregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inp_login"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="20dp"
+            android:text="Belum punya akun?"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/inp_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:layout_below="@+id/txregister"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/button_style_1"
+            app:backgroundTint="@drawable/button_style_1" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
